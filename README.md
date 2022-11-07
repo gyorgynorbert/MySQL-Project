@@ -11,7 +11,7 @@ A tervezés folyamata nem igényelt sok időt, hiszen van 3 információt tárol
 
 ## Táblák
 ### MySQL
-![Adatbázis_táblái](screenshots/database_tables.png)
+![Adatbázis_táblái](Screenshots/database_tables.png)
 
 *Az adatbázis táblái*
 
