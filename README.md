@@ -58,7 +58,7 @@ A tervezés folyamata nem igényelt sok időt, hiszen van 3 információt tárol
 ## Lekérdezések
 ### Egytáblás lekérdezések:
 - Orosz felhasználók:<br>
-!["Oroszfelhasználók"](screenshots/firstquery.png)
+!["Oroszfelhasználók"](Screenshots/firstquery.png)
 ```sql
 SELECT Username AS "Russian Users", Email FROM users WHERE Email LIKE "%.ru";
 ```
@@ -67,7 +67,7 @@ SELECT Username AS "Russian Users", Email FROM users WHERE Email LIKE "%.ru";
 <br>
 
 - 2022-es filmek:<br>
-!["2022filmek"](screenshots/secondquery.png)
+!["2022filmek"](Screenshots/secondquery.png)
 ```sql
 SELECT Title AS "2022 Movies" FROM movies WHERE ReleaseDate = "2022";
 ```
@@ -76,7 +76,7 @@ SELECT Title AS "2022 Movies" FROM movies WHERE ReleaseDate = "2022";
 <br>
 
 - Gmail felhasználók:<br>
-!["Gmailfelhasználók"](screenshots/thirdquery.png)
+!["Gmailfelhasználók"](Screenshots/thirdquery.png)
 ```sql
 SELECT Username AS "Gmail Users" FROM users WHERE Email LIKE "%@gmail.com";
 ``` 
@@ -85,14 +85,14 @@ SELECT Username AS "Gmail Users" FROM users WHERE Email LIKE "%@gmail.com";
 <br>
 
 - Dráma filmek:<br>
-!["Drámafilmek"](screenshots/fourthquery.png)
+!["Drámafilmek"](Screenshots/fourthquery.png)
 ```sql
 SELECT Title AS "Drama Movies" FROM movies WHERE Category = "Drama";
 ```
 
 ### Tobbtáblás lekérdezések:
 - VIP Felhasználók:<br>
-!["VIPFelhasználók"](screenshots/fifthquery.png)
+!["VIPFelhasználók"](Screenshots/fifthquery.png)
 ```sql
 SELECT users.Username AS "VIP Users" FROM users JOIN payments ON payments.UserID = users.UserID WHERE PaymentPlanID = 3;
 ```
@@ -101,7 +101,7 @@ SELECT users.Username AS "VIP Users" FROM users JOIN payments ON payments.UserID
 <br>
 
 - Előfizetések, amelyek a következő hónapban érnek véget:<br>
-!["Nextmonthending"](screenshots/sixthquery.png)
+!["Nextmonthending"](Screenshots/sixthquery.png)
 ```sql
 SELECT users.Username, payments.ExpiryDate AS "Subscriptions ending next month" FROM users JOIN payments ON payments.UserID = users.UserID WHERE payments.ExpiryDate < "2022-12-31";
 ```
@@ -110,7 +110,7 @@ SELECT users.Username, payments.ExpiryDate AS "Subscriptions ending next month" 
 <br>
 
 - Squid Game nézők:<br>
-!["SquidGameNézők"](screenshots/seventhquery.png)
+!["SquidGameNézők"](Screenshots/seventhquery.png)
 ```sql
 SELECT users.Username AS "Watching Squid Game" FROM watching JOIN users ON users.UserID = watching.UserID JOIN movies ON movies.MovieID = watching.MovieID WHERE movies.MovieID = 1;
 ```
@@ -119,7 +119,7 @@ SELECT users.Username AS "Watching Squid Game" FROM watching JOIN users ON users
 <br>
 
 - Egy évnél több előfizetés:<br>
-!["Overayear"](screenshots/eighthquery.png)
+!["Overayear"](Screenshots/eighthquery.png)
 ```sql
 SELECT users.Username AS "One more year of subscription" FROM users JOIN payments ON payments.UserID = users.UserID WHERE payments.ExpiryDate > "2023-11-7";
 ```
@@ -128,30 +128,30 @@ SELECT users.Username AS "One more year of subscription" FROM users JOIN payment
 <br>
 
 - Aktív felhasználók:<br>
-!["Aktívfelhasználók"](screenshots/ninethquery.png)
+!["Aktívfelhasználók"](Screenshots/ninethquery.png)
 ```sql
 SELECT users.Username AS "Active subscription" FROM users JOIN payments ON payments.UserID = users.UserID WHERE payments.IsActive = 1;
 ```
 
 ## Jelentések
 
-!["Aktívfelhasználók"](screenshots/question1.png)
+!["Aktívfelhasználók"](Screenshots/question1.png)
 
-!["Aktívfelhasználók"](screenshots/question2.png)
+!["Aktívfelhasználók"](Screenshots/question2.png)
 
-!["Aktívfelhasználók"](screenshots/question3.png)
+!["Aktívfelhasználók"](Screenshots/question3.png)
 
-!["Aktívfelhasználók"](screenshots/question4.png)
+!["Aktívfelhasználók"](Screenshots/question4.png)
 
-!["Aktívfelhasználók"](screenshots/question5.png)
+!["Aktívfelhasználók"](Screenshots/question5.png)
 
-!["Aktívfelhasználók"](screenshots/question6.png)
+!["Aktívfelhasználók"](Screenshots/question6.png)
 
-!["Aktívfelhasználók"](screenshots/question7.png)
+!["Aktívfelhasználók"](Screenshots/question7.png)
 
-!["Aktívfelhasználók"](screenshots/question8.png)
+!["Aktívfelhasználók"](Screenshots/question8.png)
 
-!["Aktívfelhasználók"](screenshots/question9.png)
+!["Aktívfelhasználók"](Screenshots/question9.png)
 
 <hr>
 
