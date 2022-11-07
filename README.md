@@ -6,7 +6,7 @@ Egy online filmszolgáltató, az én elképzelésem szerint, nagyon szükséges,
 ## Tervezés
 A tervezés folyamata nem igényelt sok időt, hiszen van 3 információt tároló táblánk és 2 kapcsoló táblánk, fejenként egy-egy azonosító kulccsal, megkönnyítve a harmadik normálforma elérését.
 
-![Bachmann-diagramm](Screenshots/bachmann.png)
+![Bachmann-diagramm](Screenshots/bachmann.png)<br>
 *Itt látható a Bachmann diagramm*
 
 ## Táblák
