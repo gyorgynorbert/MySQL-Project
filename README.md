@@ -36,7 +36,7 @@ A tervezés folyamata nem igényelt sok időt, hiszen van 3 információt tárol
 *"Watching" tálba*
 
 ### Access
-!["Users"űrlap](Screenshots/users_fomr.png)
+!["Users"űrlap](Screenshots/users_fomr.png)<br>
 *"Users" űrlap*
 
 !["PaymentPlan"űrlap](Screenshots/paymentplan_form.png)
